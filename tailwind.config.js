@@ -1,5 +1,5 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-const colors = require('tailwindcss/colors');
+const defaultTheme = require("tailwindcss/defaultTheme");
+const colors = require("tailwindcss/colors");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     ...defaultTheme,
     extend: {
-       colors: {
+      colors: {
         primary: colors.emerald,
         success: colors.green,
         info: colors.blue,
@@ -18,7 +18,7 @@ module.exports = {
         danger: colors.red,
         neutral: colors.slate,
       },
-    }
+    },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography'), require('@tailwindcss/line-clamp')],
-}
+  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography")],
+};

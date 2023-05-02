@@ -27,7 +27,7 @@ const UpsertProfileModal: FC<UpsertProfileModalProps> = ({
       const { data } = await supabase
         .from("profile")
         .upsert({ ...input, id: profile?.id })
-        .select("*")
+        .select("id,username,role")
         .throwOnError()
         .single();
 
